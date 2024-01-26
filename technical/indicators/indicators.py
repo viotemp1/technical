@@ -6,6 +6,10 @@ import math
 
 import numpy as np
 from numpy.core.records import ndarray
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
+import pandas as pd
+warnings.simplefilter(action='ignore', category=pd.errors.PerformanceWarning)
 from pandas import DataFrame, Series
 
 from .overlap_studies import sma, vwma
